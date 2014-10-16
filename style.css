@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vertical-center {
+    padding-top: 3em;
+}
+
+h1 {
+    color: #3CC0E7;
+    font-size: 48px;
+}
+
+span {
+    padding-right: .5em;
+}
+
+a {
+    color: #3CC0E7;
+}
+
+a:hover {
+    color: #09AADA;
+}
