@@ -3,7 +3,7 @@
     <title>Brian Zeng</title>
 
     <!--CSS files-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
@@ -28,9 +28,8 @@
           <br>
           I like building solutions to problems.
           <br>
-          Also interested in Psychology, UX Research, Education, Machine Learning
+          Also interested in Psychology, UX Research, Education, Machine Learning.
       </p>
-      <!--<span><a href="/about.html" id="about">About</a></span>-->
       <span><a href="#projects" id="projects-link">Projects</a></span>
       <span><a href="https://github.com/thebrianzeng">GitHub</a></span>
       <span><a href="https://www.linkedin.com/pub/brian-zeng/84/41a/138">LinkedIn</a></span>
@@ -53,7 +52,7 @@
                         gauge their students comprehension of the material.
                         <br>
                         <br>
-                        Stack: Node.JS/Express/MongoDB/Socket.io.
+                        Stack: Node.js/Express/MongoDB/Socket.io.
                     </p>
                 </div>
                 <div class="col-md-6 screenshot">
@@ -93,6 +92,7 @@
 
     <script>
         $("#projects-link").on("click", function(e) {
+            e.preventDefault();
             $("body, html").animate({
                 scrollTop: $( $(this).attr('href') ).offset().top
             }, 500);
