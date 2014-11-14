@@ -18,25 +18,85 @@
     </script>
 </head>
 <body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center landing-body">
       <h1 id="name" class="vertical-center">Brian Zeng</h1>
       <p>
         <a href="http://www.columbia.edu">@Columbia</a>, 
         <a href="https://adicu.com">@ADI</a>
-        <br>
-        Former Intern <a href="http://knewton.com">@Knewton</a>
-        <br>
-        Interested in Psychology, UX Research, Education, Machine Learning
+          <br>
+          Former Intern <a href="http://knewton.com">@Knewton</a>
+          <br>
+          I like building solutions to problems.
+          <br>
+          Also interested in Psychology, UX Research, Education, Machine Learning
       </p>
-      <!-- <span><a href="/about.html" id="about">About</a></span> -->
-      <!-- <span><a href="/blog">Blog</a></span> -->
+      <!--<span><a href="/about.html" id="about">About</a></span>-->
+      <span><a href="#projects" id="projects-link">Projects</a></span>
       <span><a href="https://github.com/thebrianzeng">GitHub</a></span>
       <span><a href="https://www.linkedin.com/pub/brian-zeng/84/41a/138">LinkedIn</a></span>
-      <span><a href="mailto:thebrianzeng@gmail.com">E-mail</a></span>
+      <span><a href="mailto:thebrianzeng@gmail.com">Contact</a></span>
     </div>
+
+    <section class="container-fluid projects-container" id="projects">
+        <div class="text-center">
+            <h1>Projects</h1>
+        </div>
+        <hr>
+        <section class="home-item">
+            <section class="row">
+                <div class="col-md-6">
+                    <h2><a href="http://instafeedback-bz.herokuapp.com">Instafeedback</a></h2>
+                    <p>
+                        Instafeedback allows you to get feedback from an audience instantly. You can create sessions and
+                        poll your audience to see how many people are confused. Audience members can also ask questions
+                        online that will appear instantly to the presenter. Instafeedback was intended for teachers to
+                        gauge their students comprehension of the material.
+                        <br>
+                        <br>
+                        Stack: Node.JS/Express/MongoDB/Socket.io.
+                    </p>
+                </div>
+                <div class="col-md-6 screenshot">
+                    <a href="http://instafeedback-bz.herokuapp.com">
+                        <img class="img-thumbnail" src="Instafeedback.png" height="180" width="340">
+                    </a>
+                </div>
+            </section>
+            <hr>
+        </section>
+        <section class="home-item">
+            <section class="row">
+                <div class="col-md-6 screenshot">
+                    <a href="http://theimpetus.herokuapp.com">
+                        <img class="img-thumbnail" src="impetus.png" height="180" width="340">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h2><a href="http://theimpetus.herokuapp.com">Impetus</a></h2>
+                    <p>
+                        Impetus is a tool for Columbia students to find other Columbia students with similar interests.
+                        When students find a match, both students receive an introductory e-mail to each other along
+                        with the interests they have in common.
+                        <br>
+                        <br>
+                        Stack: Node.js/AngularJS/MongoDB.
+                    </p>
+                </div>
+            </section>
+        </section>
+   </section>
 
     <!--Javascript Files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $("#projects-link").on("click", function(e) {
+            $("body, html").animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+        });
+    </script>
 </body>
 
