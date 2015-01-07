@@ -4,7 +4,9 @@
 
     <!--CSS files-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -18,29 +20,83 @@
     </script>
 </head>
 <body>
-    <div class="container-fluid text-center landing-body">
-      <h1 id="name" class="vertical-center">Brian Zeng</h1>
-      <p>
-        <a href="http://www.columbia.edu">@Columbia</a>, 
-        <a href="https://adicu.com">@ADI</a>
-          <br>
-          Former Intern <a href="http://knewton.com">@Knewton</a>
-          <br>
-          I like building solutions to problems.
-          <br>
-          Also interested in Psychology, UX Research, Education, Machine Learning.
-      </p>
-      <span><a href="#projects" id="projects-link">Projects</a></span>
-      <span><a href="https://github.com/thebrianzeng">GitHub</a></span>
-      <span><a href="https://www.linkedin.com/pub/brian-zeng/84/41a/138">LinkedIn</a></span>
-      <span><a href="mailto:thebrianzeng@gmail.com">Contact</a></span>
+    <div class="full-page">
+        <div class="container-fluid text-center header">
+            <h1 id="name" class="vertical-center"><a href='/'>Brian Zeng</a></h1>
+            <br>
+            <span><a href="#projects" id="projects-link">Projects</a></span>
+            <!-- <span><a href="https://github.com/thebrianzeng">Blog</a></span> -->
+            <span><a href="#reading-list" id="reading-list-link">Reading List</a></span>
+        </div>  
+        <div class="container-fluid about-container">
+            <br>
+            <br>
+            <p>Hi, I'm Brian Zeng.</p>
+            <p>I currently attend <a href="http://www.columbia.edu">Columbia University</a>, 
+                where I'm actively involved in <a href="https://adicu.com">ADI</a> and lead 
+                <a href="https://adicu.com/labs">ADI Labs</a>.
+            </p>
+            <p>I previously interned at <a href="http://knewton.com">Knewton</a>, which is trying to revolutionize education.</p>
+            <p>My interests include web development, machine learning, cognitive psychology, classical piano, baseball, and education. </p>
+            <p> I like building solutions to problems.</p>
+            <p>I enjoy deep philosophical discussions, trying out new food, and reading.</p>
+            <br>
+            <div class="text-center">
+                <a href="https://github.com/thebrianzeng">
+                    <i class="fa fa-github fa-3x"></i>
+                </a>
+                <a href="https://www.linkedin.com/pub/brian-zeng/84/41a/138">
+                    <i class="fa fa-linkedin fa-3x"></i>
+                </a>
+                <a href="mailto:thebrianzeng@gmail.com">
+                    <i class="fa fa-envelope fa-3x"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
     <section class="container-fluid projects-container" id="projects">
         <div class="text-center">
-            <h1>Projects</h1>
+            <h1 class="heading">Projects</h1>
         </div>
         <hr>
+        <section class="home-item">
+            <section class="row">
+                <div class="col-md-6">
+                    <h2><a href="http://density.adicu.com">Density</a></h2>
+                    <p>
+                        Density shows how full popular study spaces are at Columbia. Density is also an API that gives access to Wi-Fi data to Columbia developers. It is currently maintained by <a href="https://adicu.com/labs">ADI Labs</a>, a
+                        program I co-founded to develop apps for Columbia.
+                        <br>
+                        <br>
+                        Stack: Python/Flask/PostgreSQL.
+                    </p>
+                </div>
+                <div class="col-md-6 screenshot">
+                    <img class="img-thumbnail" src="density.png" height="180" width="340">
+                </div>
+            </section>
+            <hr>
+        </section>
+        <section class="home-item">
+            <section class="row">
+                <div class="col-md-6 screenshot">
+                    <a href="http://switchatcolumbia.herokuapp.com">
+                        <img class="img-thumbnail" src="switch.png" height="180" width="340">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h2><a href="http://switchatcolumbia.herokuapp.com">Switch</a></h2>
+                    <p>
+                        Switch helps Columbia students find other Columbia students to switch classes with. Students create listings that include their current class information and classes that they want to switch into. Switch sends an e-mail to students that have matching listings.
+                        <br>
+                        <br>
+                        Stack: Python/Flask/MongoDB.
+                    </p>
+                </div>
+            </section>
+            <hr>
+        </section>
         <section class="home-item">
             <section class="row">
                 <div class="col-md-6">
@@ -83,25 +139,22 @@
                 </div>
             </section>
         </section>
+    </section>
+    <section class="container-fluid reading-list-container" id="reading-list">
+        <div class="text-center">
+            <h1 class="heading">Reading List</h1>
+        </div>
         <hr>
-        <section class="home-item">
-            <section class="row">
-                <div class="col-md-6">
-                    <h2><a>Density</a></h2>
-                    <p>
-                        Density is an API for Columbia developers that gives access to Wi-Fi data for various locations
-                        at Columbia. It is currently maintained by <a href="https://adicu.com/labs">ADI Labs</a>, a
-                        program I co-founded to develop apps for Columbia.
-                        <br>
-                        <br>
-                        Stack: Python/Flask/PostgreSQL.
-                    </p>
-                </div>
-                <div class="col-md-6 screenshot">
-                    <img class="img-thumbnail" src="density.png" height="180" width="340">
-                </div>
-            </section>
-        </section>
+        <p>I try to maintain a list of all the books that I've read.</p>
+        <h4>Winter Break 2014-2015</h4>
+        <ul>
+            <li>Free Will by Sam Harris</li>
+            <li>The Moral Landscape by Sam Harris</li>
+            <li>Mortality by Christopher Hitchens</li>
+            <li>Intuition Pumps and Other Thinking Tools by Daniel Dennett</li>
+            <li>Consciousness Explained by Daniel Dennett</li>
+            <li>Make it Stick: the Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel</li>
+        </ul>
     </section>
     <footer>
     </footer>
@@ -112,6 +165,13 @@
 
     <script>
         $("#projects-link").on("click", function(e) {
+            e.preventDefault();
+            $("body, html").animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+        });
+
+        $("#reading-list-link").on("click", function(e) {
             e.preventDefault();
             $("body, html").animate({
                 scrollTop: $( $(this).attr('href') ).offset().top

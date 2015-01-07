@@ -1,23 +1,26 @@
 html, body {
     height: 100%;
-    background-color: rgb(240, 253, 255);
+    background-color: #ffffff;
 }
 
-.landing-body {
+.full-page {
     height: 100%;
+}
+
+p, li {
+    color: rgb(116, 116, 116);
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin-top: 3em;
 }
 
 .vertical-center {
-    padding-top: 3em;
 }
 
 h1 {
     color: #3CC0E7;
-    font-size: 48px;
 }
 
 h2 {
@@ -32,13 +35,27 @@ a {
     color: #3CC0E7;
 }
 
-a:hover {
+a:hover, a:focus {
     color: #09AADA;
+    text-decoration: none;
 }
+
 
 .medium-width {
     width: 780px;
     margin-top: 50px;
+}
+
+#name {
+    font-size: 60px;
+}
+
+#name, .header, .heading {
+    font-family: 'Cinzel';
+}
+
+.header span {
+    font-size: 16px;
 }
 
 #box {  
@@ -111,9 +128,33 @@ a:hover {
     margin-left: 385px;
 }
 
+.about-container {
+    width: 380px;
+}
+
+.about-container p {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.about-container div a {
+    margin-left: 40px;
+}
+
 .projects-container {
     width: 790px;
     min-height: 100%;
+    margin-bottom: 100px;
+}
+
+.reading-list-container {
+    width: 500px;
+    min-height: 100%;
+    font-size: 16px;
+}
+
+.reading-list-container {
+    color: black;
 }
 
 .screenshot {
