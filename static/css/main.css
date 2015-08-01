@@ -123,8 +123,9 @@ a {
 	}
 
 	.main-content {
-		margin-left: 2.5rem;
-		width: 23rem;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
 	}
 
 	.icon-links {
@@ -139,8 +140,9 @@ a {
 	}
 
 	.main-content {
-		margin-left: 10rem;
-		width: 30rem;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 80%;
 	}
 
 }
