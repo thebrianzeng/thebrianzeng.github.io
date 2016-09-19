@@ -4,42 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Brian Zeng</title>
-        <meta name="description" content="Brian Zeng is a student at Columbia University.">
+        <meta name="description" content="Brian Zeng is an engineer at Stripe.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Schema.org markup for Google+ -->
-        <meta itemprop="name" content="{{ self.title() }}">
-        <meta itemprop="description" content="{{ self.metaDescription() }}">
-        <meta itemprop="image" content="https://www.gravatar.com/avatar/16346c8f1f174017cc7ff89ea9bc743e.png">
-
-        <!-- Twitter Card data -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@danrschlosser">
-        <meta name="twitter:title" content="{{ self.title() }}">
-        <meta name="twitter:description" content="{{ self.metaDescription() }}">
-        <meta name="twitter:creator" content="@danrschlosser">
-        <meta name="twitter:image:src" content="https://www.gravatar.com/avatar/16346c8f1f174017cc7ff89ea9bc743e.png">
-        <meta name="twitter:domain" content="schlosser.io">
-
-        <!-- Open Graph data -->
-        <meta property="og:title" content="{{ self.title() }}" />
-        <meta property="og:type" content="{%- block metaType -%}website{%- endblock -%}" />
-        <meta property="og:url" content="https://schlosser.io{{ request.path }}" />
-        <meta property="og:image" content="https://www.gravatar.com/avatar/16346c8f1f174017cc7ff89ea9bc743e.png" />
-        <meta property="og:description" content="{{ self.metaDescription() }}" />
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico">
-
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,400italic,600italic' rel='stylesheet' type='text/css'>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- CSS styles -->
-        <link rel="stylesheet" href="static/css/normalize.css">
         <link rel="stylesheet" href="static/css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -47,38 +19,21 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div>
-            <img id="left-image" src="/static/img/beachview.jpg">
-        </div>
-        <div class="main-content">
-            <a href="/"><h1><span id="first-name">Brian</span> <span id="last-name">Zeng</span></h1></a>
-            <div class="intro">
-                <p>Hi there! Welcome to my node on the world-wide web. </p>
-                <p>Here's a little bit about me.</p>
+        <div class="flex-container">
+            <div class="main-content">
+                <a href="/"><h1><span id="first-name">Brian</span> <span id="last-name">Zeng</span></h1></a>
+                <div class="intro">
+                    <p>Hi there! Welcome to my node on the world-wide web. </p>
+                    <p>Here's a little bit about me :)</p>
+                </div>
+                <p>I'm currently an engineer at <a href="https://stripe.com/">Stripe</a>. Previously, I was a student at <a href="http://www.columbia.edu/">Columbia</a>.</p>
+                <p>In my free time, I like to think about things like <strong>philosophy</strong> and <strong>cognitive science</strong>.</p>
+                <p>I also like to read! I maintain a list of books I've read <a href="/reading-list">here</a>.</p>
+                <p>If you ever want to chat, shoot me an <a href="mailto:thebrianzeng@gmail.com">e-mail</a>!</p>
             </div>
-            <p>I'm currently an engineer at <a href="https://stripe.com/">Stripe</a>.
-            <p>I like to think about things like <strong>ethics</strong>, <strong>cognitive science</strong>, and <strong>machine learning</strong>.</p>
-            <p>I graduated from <a href="http://www.columbia.edu">Columbia</a> in 2016.
-            <p>I also like to read. I maintain a <strong>list of books</strong> I've read <a href="/reading-list">here</a>.</p>
-            <p>If you ever want to chat, shoot me an <a href="mailto:thebrianzeng@gmail.com">e-mail</a>!</p>
-            <ul class="icon-links">
-                <li><a href="https://github.com/thebrianzeng">
-                    <i class="fa fa-github fa-3x"></i>
-                </a>
-                </li>
-                <li><a href="https://www.linkedin.com/pub/brian-zeng/84/41a/138">
-                    <i class="fa fa-linkedin fa-3x"></i>
-                </a></li>
-                <li><a href="mailto:thebrianzeng@gmail.com">
-                    <i class="fa fa-envelope fa-3x"></i>
-                </a></li>
-            </ul>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
