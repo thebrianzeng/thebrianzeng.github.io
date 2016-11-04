@@ -95,6 +95,7 @@ a:hover {
 
 .main-content {
     max-width: 550px;
+    padding: 40px;
 }
 
 .main-content h1 {
